@@ -6,7 +6,7 @@
         
 	<h4>Buat Accout Baru</h4>
 	<p>Sign Up Form</p>
-	<form action="./sapa" method="post">
+	<form action="./welcome" method="post">
 		@csrf
 		  <label for="fnama">First name:</label><br>
 		  	<input type="text" id="fnama" name="fnama" value=""><br>
