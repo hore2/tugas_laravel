@@ -30,9 +30,9 @@ Route::post('/sapa','C_register@sapa');
 
 
 /*Tugasssssssssss pertama*/
-/*Route::get('/', 'HomeController@home');
+Route::get('/depan', 'HomeController@depan');
 Route::get('/register','AuthController@register');
-Route::post('/welcome','AuthController@welcome');*/
+Route::post('/welcome','AuthController@welcome');
 
 /*Tugasssssssssss kedua laravel*/
 Route::get('/',function(){
