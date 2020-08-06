@@ -14,20 +14,41 @@
 /*Route::get('/', function () {
     return view('welcome');
 });*/
-Route::get('/test', function () {
-     return view('test');
-});
+Route::get('/test/{nama}/dan/{lname}','C_register@sapa');
 
 Route::get('/form','C_register@form');
+
 Route::post('/sapa','C_register@sapa');
+	//view('test',["angka"=>$angka]);
+	/*$nama=$nama;
+	$lname=$lname;
+     return  "$nama $lname";*/
+     
 
-/*Tugasssssssssss*/
-/*Route::get('/home', function () {
-     return view('test');
 
-Route::post('/home','HomeController@home');*/
-Route::get('/', function () {
-    return view('home');
-});
+
+
+
+/*Tugasssssssssss pertama*/
+/*Route::get('/', 'HomeController@home');
 Route::get('/register','AuthController@register');
-Route::post('/welcome','AuthController@welcome');
+Route::post('/welcome','AuthController@welcome');*/
+
+/*Tugasssssssssss kedua laravel*/
+Route::get('/',function(){
+	return view('items.table1');
+});
+Route::get('/data-tables',function(){
+	return view('items.table2');
+});
+
+Route::get('/master', function(){
+	return view('adminlte.master');
+});
+Route::get('/items', function(){
+	return view('items.index');
+});
+
+Route::get('/items/create', function(){
+	return view('items.create');
+});

@@ -9,10 +9,12 @@ class C_register extends Controller
     // membuat public
      public function form()
 	    {
-	    	return view('form');
+	    	return view('register');
 		}
-	public function sapa()
+	public function sapa(Request $request)
 	    {
-	    	return view('sapa');
+	    	//dd($request->all());
+	    	$fnama =$request["fnama"];
+	    	return view('welcometest',["nama"=>$fnama]/*compact("fnama")*/);
 		}
 }

@@ -10,7 +10,7 @@
 </style>
   <body>
         
-	<h1 class="upper">selamat datang!</h1>
+	<h1 class="upper">selamat datang!{{$nama}}</h1>
 	<h2>Terima kasih telah bergabung di Sanberbook. social Media kita bersama!</h2>
 	
 	

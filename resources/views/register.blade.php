@@ -6,7 +6,7 @@
         
 	<h4>Buat Accout Baru</h4>
 	<p>Sign Up Form</p>
-	<form action="./welcome" method="post">
+	<form action="./sapa" method="POST">
 		@csrf
 		  <label for="fnama">First name:</label><br>
 		  	<input type="text" id="fnama" name="fnama" value=""><br>
@@ -27,11 +27,11 @@
 		    <option value="Australian">Australian</option>
 	  	  </select>
 	  <p>Language Spoken:</p>
-		  	<input type="checkbox" id="bindo" name="bindo" value="bindo">
+		  	<input type="checkbox" id="bindo" name="bahasa" value="bindo">
 		  <label for="bindo"> Bahasa Indonesia</label><br>
-		  	<input type="checkbox" id="English" name="English" value="English">
+		  	<input type="checkbox" id="English" name="bahasa" value="English">
 		  <label for="English"> English</label><br>
-		  	<input type="checkbox" id="Other" name="Other" value="Boat">
+		  	<input type="checkbox" id="Other" name="bahasa" value="Boat">
 		  <label for="Other"> Other</label>
 	  <p>Bio:</p>
 	  	  <textarea id="w3review" style="resize:none;width:300px;height:100px;"></textarea>

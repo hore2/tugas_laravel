@@ -8,10 +8,14 @@ class AuthController extends Controller
 {
      public function register()
 	    {
+	    	
 	    	return view('register');
 		}
 	public function welcome()
 	    {
-	    	return view('welcometest');
-		}
+	    	
+	    	/*$fname = $request["fname"];
+	    	//$lnama = $request["lnama"];*/
+	    	return view('welcometest'/*,compact("email")*/);
+	    }
 }

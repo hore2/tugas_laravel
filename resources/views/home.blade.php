@@ -4,7 +4,7 @@
 </head>
   <body>
         
-  <h1>SanberBook</h1>
+  <h1>SanberBook {{$nama_lengkap}}</h1>
   <h2>Social Media Developer Santai Berkualitas</h2>
   <p>Belajar dan Berbagi agar hidup ini semakin santai berkualitas</p>
   <h3>Benefit Join di SanberBook</h3>
