@@ -23,7 +23,7 @@ Route::post('/sapa','C_register@sapa');
 	/*$nama=$nama;
 	$lname=$lname;
      return  "$nama $lname";*/
-     
+  Route::get('/post/create','PertanyaanController@create');   
 
 
 
@@ -49,6 +49,11 @@ Route::get('/items', function(){
 	return view('items.index');
 });
 
-Route::get('/items/create', function(){
-	return view('items.create');
-});
+Route::get('/pertanyaan/create','PertanyaanController@create');
+Route::post('/pertanyaan','PertanyaanController@store');
+Route::get('/pertanyaan','PertanyaanController@index');
+Route::get('/pertanyaan/{id}','PertanyaanController@show');
+Route::delete('/pertanyaan/{id}','PertanyaanController@destroy');
+Route::get('/pertanyaan/{id}/edit','PertanyaanController@edit');
+Route::put('/pertanyaan/{id}','PertanyaanController@update');
+Route::get('/jumlah','PertanyaanController@jumlah');
