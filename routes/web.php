@@ -56,4 +56,3 @@ Route::get('/pertanyaan/{id}','PertanyaanController@show');
 Route::delete('/pertanyaan/{id}','PertanyaanController@destroy');
 Route::get('/pertanyaan/{id}/edit','PertanyaanController@edit');
 Route::put('/pertanyaan/{id}','PertanyaanController@update');
-Route::get('/jumlah','PertanyaanController@jumlah');

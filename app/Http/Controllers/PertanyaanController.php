@@ -66,6 +66,6 @@ class PertanyaanController extends Controller
    }
    function jumlah(Request $request){
     $c = DB::select("SELECT count(id) as total FROM pertanyaan2");
-    /*if($c > 0 ): a ? b;*/
+    
 }
 }
